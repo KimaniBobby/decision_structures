@@ -1,0 +1,22 @@
+def main():
+    namefile = open("names.txt", "r")
+    namestring = namefile.read()
+    lowernames = namestring.lower() #changes all the letters to lowercase
+    namelist = lowernames.split()
+    return namelist
+
+
+def main2(longString):
+    letterstart = str(input("Which letter does the name start with?"))
+    thenamelist = set()
+    for i in longString:
+        if i.startswith(letterstart):
+            thenamelist.add(i)
+    return thenamelist
+
+def final():
+    book = main()
+    getList = main2(book)
+    print (getList)
+
+final()

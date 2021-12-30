@@ -1,0 +1,16 @@
+# def searchname():
+#     infile = open("names.txt","r")
+#     for s in infile:
+#         print(s)
+
+# searchname()
+        
+def searchname():
+    infile = open("names.txt","r")
+    for s in infile:
+        print(s[:-1])
+
+searchname()
+
+#the second version of the code is better because it is easy to read the output 
+
